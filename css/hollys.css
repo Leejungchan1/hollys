@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 /* wrap 영역 --------------------------------------------------------------- */
-#wrap{}
+#wrap{
+    position: relative;
+}
 
 /* header 영역 --------------------------------------------------------------- */
 #header{
@@ -312,22 +314,185 @@
 /* event 영역 --------------------------------------------------------------- */
 .event{}
 
+
 /* event_list 영역 --------------------------------------------------------------- */
 .event_list{}
+.event_list li{
+    line-height: 1.8;
+    
+}
+.event_list li a{
+    float: left;
+    width: 80%;
+    font-size: 13px;
+
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.event_list li span{
+    float: right;
+}
 
 /* b2b 영역 --------------------------------------------------------------- */
 .b2b{}
+.b2b p{
+    line-height: 1.8;
+    text-align: justify;
+    letter-spacing: -1px;
+    /* word-spacing: -1px; */
+    font-size: 13px;
+    padding-top: 7px;
+}
+
+.more{
+    margin-top: 5px;
+}
 
 /* news 영역 --------------------------------------------------------------- */
 .news{}
 
+.new h3 img{
+    margin-bottom: 7px;
+}
+
+
+.table{
+    width: 100%;
+    table-layout: fixed;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.col1{
+    width: 80%;
+    text-overflow: ellipsis;
+    /* text-wrap: nowrap; */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.col2{
+    width: 20%;
+}
 /* notice 영역 --------------------------------------------------------------- */
 .notice{}
 
+.notice_list{
+    text-align: right;
+}
 
-/*  영역 --------------------------------------------------------------- */
+.notice_list li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 5px;
+}
 
-/*  영역 --------------------------------------------------------------- */
+.notice_list li a{
+    display: block;
+}
 
+.notice_list li:nth-child(1) a{
+    border-right: 1px dotted black;
+    padding-right: 20px;
+}
 
+.notice_list li:nth-child(1) span{
+    padding-right: 20px;
+}
+
+.notice_list li span{
+    display: block;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* cont4 영역 --------------------------------------------------------------- */
+.cont4{
+    margin: 50px 0;
+    padding: 50px 0;
+    border-top: 2px solid #0c3e87;
+}
+
+/* footer 영역 --------------------------------------------------------------- */
+#footer{
+    background: #ba000d;
+    padding: 20px 0;
+}
+
+/* foot_in 영역 --------------------------------------------------------------- */
+.foot_in{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* f_menu 영역 --------------------------------------------------------------- */
+.f_menu{
+    color: white;
+}
+.f_menu li{
+    float: left;
+}
+.f_menu li a{
+    display: block;
+    padding: 5px 10px;
+    font-size: 13px;
+    position: relative;
+}
+.f_menu li:first-child a{
+    padding-left: 0 !important;
+}
+
+.f_menu li a::after{
+    content: "";
+    display: block;
+    width: 1.5px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    right: 0;top: 8px;
+}
+
+.f_menu li:last-child a::after{
+    display: none;
+}
+
+/* address 영역 --------------------------------------------------------------- */
+.address{
+    clear: both;
+    font-style: normal;
+    font-size: 11px;
+    padding-top: 10px;
+    color: white;
+    line-height: 1.5;
+    opacity: 0.5;
+}
+/* fix 영역 --------------------------------------------------------------- */
+.fix{}
+
+.fix a{}
+
+.fix a img{
+    position: fixed;
+    left: calc(50% + 500px);
+    top: 30px;
+    z-index: 50;
+}
+/* popup 영역 --------------------------------------------------------------- */
+.popup{
+    width: 500px;
+    height: 700px;
+    border: 5px solid black;
+    box-sizing: unset; /* reset세팅취소 */
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    z-index: 50;
+}
+
+.close{
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+}
 
